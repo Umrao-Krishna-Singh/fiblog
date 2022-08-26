@@ -1,0 +1,15 @@
+
+<%- include('partials/header.ejs'); %>
+<h1>please enter 2 numbers</h1>
+<h3>Enter the first 2 numbers for the fibonacci series</h3>
+    <form action="/input" method="post">
+    <label class="form-label" for="firstNumber">The first Number of the Series</label><br>
+    <input class="form-control" type="number" name="firstNumber" id="fNum" placeholder="Please enter the first number" required /><br>
+    <label class="form-label" for="secondNumber">The second Number of the Series</label><br>
+    <input class="form-control" type="number" name="secondNumber" id="sNum" placeholder="Please enter the second number" required /><br>
+    <p>Optionally you can enter the length of the series you want.</p>
+    <label class="form-label" for="seqLength">Enter the number of elements you want. Minimum and default length is 10. </label><br>
+    <input class="form-control" type="number" name="seqLength" id="seqLength" placeholder="Please enter a number over 10. "><br>
+    <button class="btn btn-dark" type="submit">Create sequence</button>
+    </form>
+<%- include('partials/footer.ejs'); %>

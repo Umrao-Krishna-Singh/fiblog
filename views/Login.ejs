@@ -1,0 +1,13 @@
+
+<%- include('partials/header.ejs'); %>
+<h1>Hi, Welcome</h1>
+<h3>Please Log in</h3>
+<form action="/" method="post">
+    <label class="form-label" for="email">Please enter your email address</label><br>
+    <input class="form-control" type="email" name="email" id="email" placeholder="Please enter email" required />
+    <label class="form-label" for="password">Enter password </label><br>
+    <input class="form-control" type="password" name="password" id="password" placeholder="Please enter a password" required>
+    <button class="btn btn-dark" type="submit">Login</button>
+    </form>
+    <a href="/register">Or Register here</a>
+<%- include('partials/footer.ejs'); %>
